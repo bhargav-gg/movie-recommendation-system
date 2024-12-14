@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Recommendations</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0; /* Remove margin to eliminate gap at the top */
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .header {
+      width: 100%; /* Span the entire width of the page */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px; /* Thinner header */
+      background-color: #00bcd4; /* Cyan blue background */
+      border-bottom: 1px solid #333;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px; /* Smaller font size for thinner header */
+      font-weight: 700;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif; /* Stylish font */
+    }
+
+    .header a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .search-bar {
+      width: 50%;
+      padding: 10px;
+      border-radius: 25px;
+      border: none;
+      outline: none;
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .search-bar::placeholder {
+      color: #aaaaaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="/"><h1>Movie Recommendations</h1></a>
+  </div>
+  
+  <div class="search-container" style="text-align: center; margin-top: 20px;">
+    <form action="/search" method="GET">
+      <input type="text" name="query" placeholder="Search for a movie name!" class="search-bar" />
+    </form>
+  </div>
+  
+</body>
+</html>

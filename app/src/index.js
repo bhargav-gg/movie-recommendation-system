@@ -22,8 +22,6 @@ app.get('/', (req, res) => {
 app.get('/search', async (req, res) => {
     const query = req.query.query;
 
-    console.log(query);
-
     let search_results = await request(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${query}`);
     search_results = JSON.parse(search_results.body);
     search_results = search_results.results;
